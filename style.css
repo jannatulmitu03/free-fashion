@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --font-heading: "Bebas Neue", sans-serif;
+    --prymary-color: #D99655;
+    font-size: 0.625;
+
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+a{
+    text-decoration: none;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    color:#1E1C1A;    
+}
+
+p{
+    font-family: Plus Jakarta Sans;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    
+}
+
+h2{
+    font-family: Bebas Neue;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+}
+
+
+header{
+    background: #FFF0E3;
+
+}
+
+.logo{
+    width: 3rem;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    translate: 0 3rem;
+    padding: 2rem 3rem;
+    margin: 0 8rem;
+    
+}
+
+.menu1{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    
+}
+.menu-bar{
+    display: none;
+}
+
+.nav-group{
+    border-right: 2px solid gainsboro;  
+}
+
+.hero{
+    background: #FFF0E3;
+    padding-top: 9.4rem;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;    
+}
+
+.hero h1{
+    font-family: var(--font-heading);
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 6rem;
+    text-align: center;  
+    
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 2rem;
+    background-color: var(--prymary-color);
+    color: white;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: var(--font-heading);
+}
+
+.arrow{
+    width: 1.8rem;
+    
+}
+
+.hero-img{
+    padding-top: 10.5rem;
+    display: flex;
+    align-items: last baseline;
+    gap: 2rem;
+}
+
+.Collection{
+    padding: 8rem 0 5rem;
+    border-bottom: 2px solid gainsboro;
+}
+
+.Collection-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 4rem;
+}
+
+.Collection-img{
+    display: flex;
+    gap: 2rem;
+}
+
+.arrivals{
+    padding: 8rem 0;
+}
+
+.arrivals-img{
+    display: flex;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+.arrivals-img p{
+   font-weight: 600;
+}
+
+.cart-group{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 2rem;
+}
+
+.cart-logo{
+    width: 3rem;
+}
+
+.underline{
+    border-bottom: 1px solid gainsboro;
+}
+.arriv{
+    border-bottom: 2px solid black;
+}
+
+@media (max-width:600px) {
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    h2{
+        font-size: 2.8rem;
+    }
+
+    .menu1{
+        display: none;
+    }
+
+    .menu-bar{
+        display: block;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        translate: 0 3rem;
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+
+    .hero h1{
+        font-family: var(--font-heading);
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-align: start;  
+        
+    }
+
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 3rem;
+        text-align: center;
+        padding: 0 1rem;    
+    }
+
+    .btn{
+        font-size: 1.2rem;
+    }
+
+    .hero-img{
+        padding-top: 5rem;
+        display: flex;
+        align-items: last baseline;
+        gap: 9px;
+    }
+
+    .hero-container{
+        padding: 0;
+    }
+
+    .hero-img img{
+        width: 87px;
+    }
+
+    .Collection{
+        padding: 5rem 0 3rem;
+        border-bottom: 2px solid gainsboro;
+    }
+
+    .Collection-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .arrivals {
+        padding: 5rem 0;
+    }
+
+    .arrivals-img{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+}
+
